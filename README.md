@@ -10,7 +10,7 @@ npm install
 npm run dev
 ```
 
-I swear to god do not push node_modules
+I swear to god do not push **node_modules**
 
 ### Look at
 https://eip.vercel.app
