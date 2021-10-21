@@ -9,3 +9,6 @@ cd EIP
 npm install
 npm run dev
 ```
+
+### Look at
+https://eip.vercel.app
