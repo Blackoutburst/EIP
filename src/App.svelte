@@ -24,7 +24,8 @@
             - Florian Chanson<br>
             - Lyvia Mallereau<br>
             - Corentin Petrau<br>
-            -Yann Berger
+            - Yann Berger<br>
+	    - Raphael Risser
         </p>
     </div>
 
