@@ -19,7 +19,12 @@
     <div class="equipe">
         <h2>Notre équipe</h2>
         <p>
-            yes
+            - Alec Ferrari<br>
+            - Paul Narchal<br>
+            - Florian Chanson<br>
+            - Lyvia Mallereau<br>
+            - Corentin Petrau<br>
+            - Yann Berger
         </p>
     </div>
 
