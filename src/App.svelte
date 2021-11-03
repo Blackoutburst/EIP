@@ -19,12 +19,12 @@
     <div class="equipe">
         <h2>Notre équipe</h2>
         <p>
-            Xx_D4rk-4l3c-F3rr4r1_xX<br>
-            Xx_D4rk-P4ul-N4rch4l_xX<br>
-            Xx_D4rk-Fl0r14n-Ch4ns0n_xX<br>
-            Xx_D4rk-Lyv14-M4ll3r34u_xX<br>
-            Xx_D4rk-C0r3nt1n-P3tr4u_xX<br>
-            Xx_D4rk-Y4nn-B3rg3r_xX
+            - Alec Ferrari<br>
+            - Paul Narchal<br>
+            - Florian Chanson<br>
+            - Lyvia Mallereau<br>
+            - Corentin Petrau<br>
+            -Yann Berger
         </p>
     </div>
 
