@@ -4,10 +4,10 @@
     let showMobileMenu = false;
 
     const navItems = [
-    { label: "Article", href: "#" },
-    { label: "Vidéo", href: "#" },
-    { label: "Interview", href: "#" },
-    { label: "Linkdin profile", href: "#" }
+    { label: "Article", href: "Article.svelte" },
+    { label: "Vidéo", href: "Video.svelte" },
+    { label: "Interview", href: "Interview.Svelte" },
+    { label: "Linkedin profile", href: "Linkedin.svelte" }
   ];
 
   const handleMobileIconClick = () => (showMobileMenu = !showMobileMenu);
@@ -32,13 +32,11 @@
         <img src="img/splash.jpg" alt="splash" class="splash">
     </div>
 </header>
-
 <nav>
     <div class="inner">
       <div on:click={handleMobileIconClick} class={`mobile-icon${showMobileMenu ? ' active' : ''}`}>
         <div class="middle-line"></div>
       </div>
-      <a class="navbar-brand" href="https://eip.vercel.app/"><img src="favicon.png" alt="logo Crystal EIP"></a>
       <ul class={`navbar-list${showMobileMenu ? ' mobile' : ''}`}>
         {#each navItems as item}
           <li>
@@ -54,7 +52,7 @@
 <body>
     <div class="presentation">
         <p>
-            Crystal Editor est un éditeur graphique capable de s'adapter à tous les moteurs de jeux du marché. <br>
+            Crystal Editor est un éditeur graphique agnostique, c'est à dire qu'il est capable de s'adapter à tous les moteurs de jeux du marché. <br>
             <br>
             Conçus avec des technologies émargeantes telle que:<br>
             <a href="https://www.rust-lang.org" target="_blank" rel="noopener noreferrer">Rust</a>, <a href="https://tauri.studio/" target="_blank" rel="noopener noreferrer">Tauri</a> et <a href="https://svelte.dev" target="_blank" rel="noopener noreferrer">Svelte</a>, cet éditeur vous simplifiera la vie lors de vos développements de jeux vidéo.<br>
@@ -64,18 +62,40 @@
             Ce projet est en relation directe avec le moteur de jeu <a href="https://amethyst.rs" target="_blank" rel="noopener noreferrer">Amethyst</a>
         </p>
     </div>
-
     <div class="equipe">
-        <h2>Notre équipe</h2>
-        <p>
-            - Alec Ferrari<br>
-            - Paul Narchal<br>
-            - Florian Chanson<br>
-            - Lyvia Mallereau<br>
-            - Corentin Petrau<br>
-            - Yann Berger<br>
-	    - Raphael Risser
-        </p>
+      <h2>Notre équipe</h2>
+      <div class="teams1">
+        <td>
+          <img src="img/Alec_pdp.jpg" alt="Alec photo">
+          <h4>Alec Ferrari&emsp;</h4>
+        </td>
+        <td>
+          <img src="img/paul_low.jpg" alt="Paul photo">
+          <h4>Paul Narchal&emsp;</h4>
+        </td>
+        <td>
+          <img src="img/florian_pdp.png" alt="Florian photo">
+          <h4>Florian Chanson&emsp;</h4>
+        </td>
+        <td>
+          <img src="img/Corentin_pdp.jpg" alt="Corentin photo">
+          <h4>Corentin Petrau</h4>
+        </td>
+      </div>
+      <div class="teams2">
+      <td>
+        <img src="img/Lyv_pdp.jpeg" alt="Lyvia photo">
+        <h4 style="text-align: center;">Lyvia Mallereau&emsp;</h4>
+      </td>
+      <td>
+        <img src="img/unamed.jpg" alt="Unamed photo">
+        <h4 style="text-align: center;">Raphael Risser&emsp;</h4>
+      </td>
+      <td>
+        <img src="img/unamed.jpg" alt="Unamed photo">
+        <h4 style="text-align: center;">Yann Berger</h4>
+      </td>
+      </div>
     </div>
 
     <div class="log">
@@ -99,12 +119,6 @@ nav
     background-color: rgba(29, 11, 25, 0.8);
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     height: 45px;
-}
-
-.navbar-brand img
-{
-    height: 45px;
-    padding-left: 10px;
 }
 
 .inner
@@ -232,7 +246,12 @@ nav
   height: 45px;
   align-items: center;
   padding: 0 10px;
-  font-size: 13px;
+  font-size: 25px;
+}
+
+.navbar-list a:hover
+{
+    color: #007bff!important;
 }
 
 @media only screen and (min-width: 767px)
