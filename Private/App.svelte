@@ -4,10 +4,10 @@
     let showMobileMenu = false;
 
     const navItems = [
+    { label: "Accueil", href:"#" },
     { label: "Article", href: "Article.svelte" },
     { label: "Vidéo", href: "Video.svelte" },
-    { label: "Interview", href: "Interview.Svelte" },
-    { label: "Linkedin profile", href: "Linkedin.svelte" }
+    { label: "Interview", href: "Interview.Svelte" }
   ];
 
   const handleMobileIconClick = () => (showMobileMenu = !showMobileMenu);
@@ -51,6 +51,9 @@
 
 <body>
     <div class="presentation">
+      <video id="background-video" autoplay loop muted>
+        <source src="video/CRYSTAL_V3.mp4" type="video/mp4">
+      </video>
         <p>
             Crystal Editor est un éditeur graphique agnostique, c'est à dire qu'il est capable de s'adapter à tous les moteurs de jeux du marché. <br>
             <br>
@@ -66,49 +69,44 @@
       <h2>Notre équipe</h2>
       <div class="teams1">
         <td>
+          <!-- svelte-ignore a11y-img-redundant-alt -->
           <img src="img/Alec_pdp.jpg" alt="Alec photo">
-          <h4>Alec Ferrari&emsp;</h4>
+          <a href="https://www.linkedin.com/in/alec-ferrari-170575196/" target="_blank" rel="noopener noreferrer"><br>Alec Ferrari&emsp;</a>
         </td>
         <td>
+          <!-- svelte-ignore a11y-img-redundant-alt -->
           <img src="img/paul_low.jpg" alt="Paul photo">
-          <h4>Paul Narchal&emsp;</h4>
+          <a href="https://www.linkedin.com/in/paulnarchal/" target="_blank" rel="noopener noreferrer"><br>Paul Narchal&emsp;</a>
         </td>
         <td>
+           <!-- svelte-ignore a11y-img-redundant-alt -->
           <img src="img/florian_pdp.png" alt="Florian photo">
-          <h4>Florian Chanson&emsp;</h4>
+          <a href="#" target="_blank" rel="noopener noreferrer"><br>Florian Chanson&emsp;</a>
         </td>
         <td>
+           <!-- svelte-ignore a11y-img-redundant-alt -->
           <img src="img/Corentin_pdp.jpg" alt="Corentin photo">
-          <h4>Corentin Petrau</h4>
+          <a href="https://www.linkedin.com/in/corentin-petrau-116853197/" target="_blank" rel="noopener noreferrer"><br>Corentin Petrau</a>
         </td>
       </div>
+      <br><br>
       <div class="teams2">
       <td>
+         <!-- svelte-ignore a11y-img-redundant-alt -->
         <img src="img/Lyv_pdp.jpeg" alt="Lyvia photo">
-        <h4 style="text-align: center;">Lyvia Mallereau&emsp;</h4>
+        <a href="https://www.linkedin.com/in/lyvia-mallereau-280928154/" target="_blank" rel="noopener noreferrer"><br>Lyvia Mallereau&emsp;</a>
       </td>
       <td>
-        <img src="img/unamed.jpg" alt="Unamed photo">
-        <h4 style="text-align: center;">Raphael Risser&emsp;</h4>
+         <!-- svelte-ignore a11y-img-redundant-alt -->
+        <img src="img/raphael_pdp.jpeg" alt="Raphael photo">
+        <a href="https://www.linkedin.com/in/rapha%C3%ABl-risser-667852197/" target="_blank" rel="noopener noreferrer"><br>Raphael Risser&emsp;</a>
       </td>
       <td>
+         <!-- svelte-ignore a11y-img-redundant-alt -->
         <img src="img/unamed.jpg" alt="Unamed photo">
-        <h4 style="text-align: center;">Yann Berger</h4>
+        <a href="https://www.linkedin.com/in/yann-berger-421b41181/" target="_blank" rel="noopener noreferrer"><br>Yann Berger</a>
       </td>
       </div>
-    </div>
-
-    <div class="log">
-        <h2>Nos actions</h2>
-        <h4 style="padding-top: 5vh;">Article medium</h4>
-        <p>
-            Création d'un article medium afin de promouvoir notre projet.<br>
-            <a href="https://medium.com/@lyvia.mallereau/crystal-editor-un-éditeur-pour-engine-open-source-réalisé-par-des-étudiants-7f9a8497b630" target="_blank" rel="noopener noreferrer">Lien vers l'article</a>
-        </p>
-        <h4 style="padding-top: 5vh;">Site vitrine du projet</h4>
-        <p>
-            Le site que vous consultez actuellement ;)
-        </p>
     </div>
 </body>
 
@@ -119,6 +117,18 @@ nav
     background-color: rgba(29, 11, 25, 0.8);
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     height: 45px;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .inner
@@ -279,15 +289,6 @@ nav
     margin: 0px;
 }
 
-.log
-{
-    font-size: 1.5vw;
-    text-align: center;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    padding-bottom: 10vh;
-}
-
 .equipe
 {
     font-size: 1.5vw;
@@ -296,6 +297,7 @@ nav
     margin-right: 25vw;
     padding-bottom: 10vh;
     font-weight: bold;
+    color: white;
 }
 
 .presentation
@@ -306,5 +308,6 @@ nav
     margin-left: 25vw;
     margin-right: 25vw;
     padding-bottom: 10vh;
+    color: white;
 }
 </style>
