@@ -4,7 +4,6 @@
     let showMobileMenu = false;
 
     const navItems = [
-    { label: "logo", href: "#" },
     { label: "Article", href: "#" },
     { label: "Vidéo", href: "#" },
     { label: "Interview", href: "#" },
@@ -39,6 +38,7 @@
       <div on:click={handleMobileIconClick} class={`mobile-icon${showMobileMenu ? ' active' : ''}`}>
         <div class="middle-line"></div>
       </div>
+      <a class="navbar-brand" href="https://eip.vercel.app/"><img src="favicon.png" alt="logo Crystal EIP"></a>
       <ul class={`navbar-list${showMobileMenu ? ' mobile' : ''}`}>
         {#each navItems as item}
           <li>
@@ -96,9 +96,15 @@
 
 nav 
 {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(29, 11, 25, 0.8);
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     height: 45px;
+}
+
+.navbar-brand img
+{
+    height: 45px;
+    padding-left: 10px;
 }
 
 .inner
