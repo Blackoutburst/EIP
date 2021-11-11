@@ -50,10 +50,11 @@
 
 
 <body>
-    <div class="presentation">
+  <div class="presentation">
       <video id="background-video" autoplay loop muted>
         <source src="video/CRYSTAL_V3.mp4" type="video/mp4">
       </video>
+      <h1>Présentation Crystal Editor</h1>
         <p>
             Crystal Editor est un éditeur graphique agnostique, c'est à dire qu'il est capable de s'adapter à tous les moteurs de jeux du marché. <br>
             <br>
@@ -297,7 +298,8 @@ nav
     margin-right: 25vw;
     padding-bottom: 10vh;
     font-weight: bold;
-    color: white;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .presentation
@@ -308,6 +310,7 @@ nav
     margin-left: 25vw;
     margin-right: 25vw;
     padding-bottom: 10vh;
-    color: white;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 </style>
