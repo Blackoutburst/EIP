@@ -75,7 +75,6 @@ export default [
     		clearScreen: false
     	}
     },
-
     {
     	input: 'src/article.js',
     	output: {
