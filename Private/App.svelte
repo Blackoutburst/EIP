@@ -7,7 +7,8 @@
         { label: "Accueil", href:"index.html" },
         { label: "Article", href: "article.html" },
         { label: "Getting Started", href: "getting_started.html" },
-        { label: "Interview", href: "interview.html" }
+        { label: "Interview", href: "interview.html" },
+        { label: "Buzzwords", href: "buzzwords.html" }
   ];
 
   const handleMobileIconClick = () => (showMobileMenu = !showMobileMenu);
