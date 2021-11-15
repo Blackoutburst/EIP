@@ -298,7 +298,7 @@ nav
     margin-right: 25vw;
     padding-bottom: 10vh;
     font-weight: bold;
-    color: black;
+    color: white;
     background-color: rgba(80, 80, 80, 0.9);
 }
 
@@ -310,7 +310,7 @@ nav
     margin-left: 25vw;
     margin-right: 25vw;
     padding-bottom: 10vh;
-    color: black;
+    color: white;
     background-color: rgba(80, 80, 80, 0.9);
 }
 </style>
