@@ -5,7 +5,7 @@
 
     const navItems = [
     { label: "Accueil", href:"#" },
-    { label: "Article", href: "Article.svelte" },
+    { label: "Article", href: "article.html" },
     { label: "Vidéo", href: "Video.svelte" },
     { label: "Interview", href: "Interview.Svelte" }
   ];
@@ -23,7 +23,7 @@
     const mediaListener = window.matchMedia("(max-width: 767px)");
 
     mediaListener.addListener(mediaQueryHandler);
-  });   
+  });
 
 </script>
 
@@ -113,7 +113,7 @@
 
 <style>
 
-nav 
+nav
 {
     background-color: rgba(29, 11, 25, 0.8);
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -278,7 +278,7 @@ nav
       padding: 0;
     }
 
-    .navbar-list a 
+    .navbar-list a
     {
       display: inline-flex;
     }
