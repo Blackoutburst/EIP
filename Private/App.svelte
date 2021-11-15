@@ -299,7 +299,7 @@ nav
     padding-bottom: 10vh;
     font-weight: bold;
     color: black;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(80, 80, 80, 0.9);
 }
 
 .presentation
@@ -311,6 +311,6 @@ nav
     margin-right: 25vw;
     padding-bottom: 10vh;
     color: black;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(80, 80, 80, 0.9);
 }
 </style>
