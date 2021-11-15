@@ -6,7 +6,7 @@
     const navItems = [
     { label: "Accueil", href:"#" },
     { label: "Article", href: "article.html" },
-    { label: "Vidéo", href: "Video.svelte" },
+    { label: "Getting Started", href: "getting_started.html" },
     { label: "Interview", href: "Interview.Svelte" }
   ];
 
