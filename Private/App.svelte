@@ -4,10 +4,10 @@
     let showMobileMenu = false;
 
     const navItems = [
-    { label: "Accueil", href:"#" },
-    { label: "Article", href: "article.html" },
-    { label: "Vidéo", href: "Video.svelte" },
-    { label: "Interview", href: "Interview.Svelte" }
+        { label: "Accueil", href:"index.html" },
+        { label: "Article", href: "article.html" },
+        { label: "Getting Started", href: "getting_started.html" },
+        { label: "Interview", href: "Interview.Svelte" }
   ];
 
   const handleMobileIconClick = () => (showMobileMenu = !showMobileMenu);
