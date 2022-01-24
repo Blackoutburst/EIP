@@ -29,96 +29,149 @@
 </script>
 
 <header>
-    <div class="header">
-        <img src="img/splash.jpg" alt="splash" class="splash">
+  <div class="header">
+    <div class="img-wrapper">
+      <img src="img/logo.png" alt="splash" class="splash">
     </div>
+    <h1 class="title-name">Atlas Editor</h1>
+  </div>
 </header>
 <nav>
-    <div class="inner">
-      <div on:click={handleMobileIconClick} class={`mobile-icon${showMobileMenu ? ' active' : ''}`}>
-        <div class="middle-line"></div>
-      </div>
-      <ul class={`navbar-list${showMobileMenu ? ' mobile' : ''}`}>
-        {#each navItems as item}
-          <li>
-            <a href={item.href}>{item.label}</a>
-          </li>
-        {/each}
-      </ul>
+  <div class="inner">
+    <div on:click={handleMobileIconClick} class={`mobile-icon${showMobileMenu ? ' active' : ''}`}>
+      <div class="middle-line"></div>
     </div>
+    <ul class={`navbar-list${showMobileMenu ? ' mobile' : ''}`}>
+      {#each navItems as item}
+        <li>
+          <a href={item.href}>{item.label}</a>
+        </li>
+      {/each}
+    </ul>
+  </div>
 </nav>
 
 
 
 <body>
   <div class="presentation">
-      <video id="background-video" autoplay loop muted>
-        <source src="video/CRYSTAL_V3.mp4" type="video/mp4">
-      </video>
-      <h1>Présentation Crystal Editor</h1>
-        <p>
-            Crystal Editor est un éditeur graphique agnostique, c'est à dire qu'il est capable de s'adapter à tous les moteurs de jeux du marché. <br>
-            <br>
-            Conçus avec des technologies émargeantes telle que:<br>
-            <a href="https://www.rust-lang.org" target="_blank" rel="noopener noreferrer">Rust</a>, <a href="https://tauri.studio/" target="_blank" rel="noopener noreferrer">Tauri</a> et <a href="https://svelte.dev" target="_blank" rel="noopener noreferrer">Svelte</a>, cet éditeur vous simplifiera la vie lors de vos développements de jeux vidéo.<br>
-            <br>
-            Le tout avec une possibilité de personnalisation complète afin de réellement répondre à vos besoins.<br>
-            <br>
-            Ce projet est en relation directe avec le moteur de jeu <a href="https://amethyst.rs" target="_blank" rel="noopener noreferrer">Amethyst</a>
-        </p>
-    </div>
-    <div class="equipe">
-      <h2>Notre équipe</h2>
-      <div class="teams1">
-        <td>
-          <!-- svelte-ignore a11y-img-redundant-alt -->
-          <img src="img/Alec_pdp.jpg" alt="Alec photo">
-          <a href="https://www.linkedin.com/in/alec-ferrari-170575196/" target="_blank" rel="noopener noreferrer"><br>Alec Ferrari&emsp;</a>
-        </td>
-        <td>
-          <!-- svelte-ignore a11y-img-redundant-alt -->
-          <img src="img/paul_low.jpg" alt="Paul photo">
-          <a href="https://www.linkedin.com/in/paulnarchal/" target="_blank" rel="noopener noreferrer"><br>Paul Narchal&emsp;</a>
-        </td>
-        <td>
-           <!-- svelte-ignore a11y-img-redundant-alt -->
-          <img src="img/florian_pdp.png" alt="Florian photo">
-          <a href="#" target="_blank" rel="noopener noreferrer"><br>Florian Chanson&emsp;</a>
-        </td>
-        <td>
-           <!-- svelte-ignore a11y-img-redundant-alt -->
-          <img src="img/Corentin_pdp.jpg" alt="Corentin photo">
-          <a href="https://www.linkedin.com/in/corentin-petrau-116853197/" target="_blank" rel="noopener noreferrer"><br>Corentin Petrau</a>
-        </td>
+      <p style="margin: 20px;">
+          Atlas Editor est un éditeur graphique agnostique, c'est à dire qu'il est capable de s'adapter à tous les moteurs de jeux du marché. <br>
+          <br>
+          Conçus avec des technologies émargeantes telle que:<br>
+          <a href="https://www.rust-lang.org" target="_blank" rel="noopener noreferrer">Rust</a>, <a href="https://tauri.studio/" target="_blank" rel="noopener noreferrer">Tauri</a> et <a href="https://svelte.dev" target="_blank" rel="noopener noreferrer">Svelte</a>, cet éditeur vous simplifiera la vie lors de vos développements de jeux vidéo.<br>
+          <br>
+          Le tout avec une possibilité de personnalisation complète afin de réellement répondre à vos besoins.<br>
+          <br>
+      </p>
+  </div>
+  <div class="team">
+    <h2>Notre équipe</h2>
+    <div class="mugshots">
+      <div class="mugshot">
+        <!-- svelte-ignore a11y-img-redundant-alt -->
+        <img src="img/Alec_pdp.jpg" alt="Alec photo">
+        <a class="hidden-link" href="https://www.linkedin.com/in/alec-ferrari-170575196/" target="_blank" rel="noopener noreferrer">Alec Ferrari</a>
       </div>
-      <br><br>
-      <div class="teams2">
-      <td>
-         <!-- svelte-ignore a11y-img-redundant-alt -->
+      <div class="mugshot">
+        <!-- svelte-ignore a11y-img-redundant-alt -->
+        <img src="img/paul_low.jpg" alt="Paul photo">
+        <a class="hidden-link" href="https://www.linkedin.com/in/paulnarchal/" target="_blank" rel="noopener noreferrer">Paul Narchal</a>
+      </div>
+      <div class="mugshot">
+          <!-- svelte-ignore a11y-img-redundant-alt -->
+        <img src="img/florian_pdp.png" alt="Florian photo">
+        <a class="hidden-link" href="https://github.com/Blackoutburst/" target="_blank" rel="noopener noreferrer">Florian Chanson</a>
+      </div>
+      <div class="mugshot">
+          <!-- svelte-ignore a11y-img-redundant-alt -->
+        <img src="img/Corentin_pdp.jpg" alt="Corentin photo">
+        <a class="hidden-link" href="https://www.linkedin.com/in/corentin-petrau-116853197/" target="_blank" rel="noopener noreferrer">Corentin Petrau</a>
+      </div>
+      <div class="mugshot">
+        <!-- svelte-ignore a11y-img-redundant-alt -->
         <img src="img/Lyv_pdp.jpeg" alt="Lyvia photo">
-        <a href="https://www.linkedin.com/in/lyvia-mallereau-280928154/" target="_blank" rel="noopener noreferrer"><br>Lyvia Mallereau&emsp;</a>
-      </td>
-      <td>
-         <!-- svelte-ignore a11y-img-redundant-alt -->
+        <a class="hidden-link" href="https://www.linkedin.com/in/lyvia-mallereau-280928154/" target="_blank" rel="noopener noreferrer">Lyvia Mallereau</a>
+      </div>
+      <div class="mugshot">
+        <!-- svelte-ignore a11y-img-redundant-alt -->
         <img src="img/raphael_pdp.jpeg" alt="Raphael photo">
-        <a href="https://www.linkedin.com/in/rapha%C3%ABl-risser-667852197/" target="_blank" rel="noopener noreferrer"><br>Raphael Risser&emsp;</a>
-      </td>
-      <td>
-         <!-- svelte-ignore a11y-img-redundant-alt -->
+        <a class="hidden-link" href="https://www.linkedin.com/in/rapha%C3%ABl-risser-667852197/" target="_blank" rel="noopener noreferrer">Raphael Risser</a>
+      </div>
+      <div class="mugshot">
+        <!-- svelte-ignore a11y-img-redundant-alt -->
         <img src="img/unamed.jpg" alt="Unamed photo">
-        <a href="https://www.linkedin.com/in/yann-berger-421b41181/" target="_blank" rel="noopener noreferrer"><br>Yann Berger</a>
-      </td>
+        <a class="hidden-link" href="https://www.linkedin.com/in/yann-berger-421b41181/" target="_blank" rel="noopener noreferrer">Yann Berger</a>
       </div>
     </div>
+  </div>
 </body>
 
 <style>
 
+body {
+  background-color: #242d3c;
+  height: fit-content;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+a:hover {
+  color: #ee394b;
+}
+
+.hidden-link {
+  text-decoration: none;
+}
+
+.img-wrapper {
+  height: 300px;
+  width: 300px;
+}
+
+.header {
+  width: 100%;
+  height: 320px;
+  padding: 10px;
+  color: #ee394b;
+  background-color: #242d3c;
+  display: flex;
+  flex-direction: row;
+}
+
+.title-name {
+  margin: auto;
+  margin-left: 10%;
+  font-size: 90pt;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
 nav
 {
-    background-color: rgba(29, 11, 25, 0.8);
+    background-color: #141922;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     height: 45px;
+}
+
+.mugshots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mugshot {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
 }
 
 #background-video {
@@ -239,7 +292,7 @@ nav
   position: relative;
 }
 
-.navbar-list li:before
+/* .navbar-list li:before
 {
   content: "";
   position: absolute;
@@ -248,7 +301,7 @@ nav
   width: 100%;
   height: 1px;
   background-color: #424245;
-}
+} */
 
 .navbar-list a
 {
@@ -263,7 +316,7 @@ nav
 
 .navbar-list a:hover
 {
-    color: #007bff!important;
+    color: #ee394b!important;
 }
 
 @media only screen and (min-width: 767px)
@@ -291,7 +344,7 @@ nav
     margin: 0px;
 }
 
-.equipe
+.team
 {
     font-size: 1.5vw;
     text-align: center;
@@ -300,7 +353,7 @@ nav
     padding-bottom: 10vh;
     font-weight: bold;
     color: white;
-    background-color: rgba(80, 80, 80, 0.9);
+    background-color: #141922CC;
 }
 
 .presentation
@@ -312,6 +365,6 @@ nav
     margin-right: 25vw;
     padding-bottom: 10vh;
     color: white;
-    background-color: rgba(80, 80, 80, 0.9);
+    background-color: #141922CC;
 }
 </style>
