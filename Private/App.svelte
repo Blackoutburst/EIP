@@ -30,7 +30,7 @@
 
 <header>
   <div class="header">
-    <div class="img-wrapper">
+    <div class="img-wrapper logo">
       <img src="img/logo.png" alt="splash" class="splash">
     </div>
     <h1 class="title-name">Atlas Editor</h1>
@@ -122,6 +122,12 @@ a:hover {
   color: #ee394b;
 }
 
+.logo {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+}
+
 .hidden-link {
   text-decoration: none;
 }
@@ -143,7 +149,6 @@ a:hover {
 
 .title-name {
   margin: auto;
-  margin-left: 10%;
   font-size: 90pt;
 }
 

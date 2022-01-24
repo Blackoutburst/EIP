@@ -29,7 +29,10 @@ onMount(() => {
 
 <header>
   <div class="header">
-      <img src="img/splash.jpg" alt="splash" class="splash">
+    <div class="img-wrapper logo">
+      <img src="img/logo.png" alt="splash" class="splash">
+    </div>
+    <h1 class="title-name">Atlas Editor</h1>
   </div>
 </header>
 <nav>
@@ -49,9 +52,53 @@ onMount(() => {
 
 <style>
 
-nav 
+a {
+  color: white;
+  text-decoration: underline;
+}
+a:hover {
+  color: #ee394b;
+}
+
+.logo {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+}
+
+.hidden-link {
+  text-decoration: none;
+}
+
+.img-wrapper {
+  height: 300px;
+  width: 300px;
+}
+
+.header {
+  width: 100%;
+  height: 320px;
+  padding: 10px;
+  color: #ee394b;
+  background-color: #242d3c;
+  display: flex;
+  flex-direction: row;
+}
+
+.title-name {
+  margin: auto;
+  font-size: 90pt;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+nav
 {
-    background-color: rgba(29, 11, 25, 0.8);
+    background-color: #141922;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     height: 45px;
 }

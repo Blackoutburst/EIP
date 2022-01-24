@@ -29,9 +29,14 @@
 </script>
 
 <body>
-<div class="header">
-    <img src="img/splash.jpg" alt="splash" class="splash">
-</div>
+  <header>
+    <div class="header">
+      <div class="img-wrapper logo">
+        <img src="img/logo.png" alt="splash" class="splash">
+      </div>
+      <h1 class="title-name">Atlas Editor</h1>
+    </div>
+  </header>
 
 <nav>
     <div class="inner">
@@ -48,6 +53,7 @@
     </div>
 </nav>
 
+<h1 style="margin-bottom: 10vh;">This tutorial was relevant for a previous version of the project, it isn't anymore.</h1>
 <h1 id="installing-tauri-on-ubuntu-20-04">Installing tauri on Ubuntu 20.04</h1>
 <h2 id="dependencies">Dependencies</h2>
 <p>Tauri needs quite a few dependencies to work, add them using this command:</p>
@@ -92,7 +98,6 @@
 h1 {
     font-size: 3vw;
     text-align: left;
-    padding-top: 10vh;
     margin-left: 25vw;
     margin-right: 25vw;
     padding-bottom: 1vh;
@@ -120,10 +125,59 @@ pre {
     margin-left: 25vw;
     margin-right: 25vw;
 }
+body {
+  background-color: #242d3c;
+  height: fit-content;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+a:hover {
+  color: #ee394b;
+}
+
+.logo {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+}
+
+.hidden-link {
+  text-decoration: none;
+}
+
+.img-wrapper {
+  height: 300px;
+  width: 300px;
+}
+
+.header {
+  width: 100%;
+  height: 320px;
+  padding: 10px;
+  color: #ee394b;
+  background-color: #242d3c;
+  display: flex;
+  flex-direction: row;
+}
+
+.title-name {
+  margin: auto;
+  font-size: 90pt;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
 
 nav
 {
-    background-color: rgba(29, 11, 25, 0.8);
+    background-color: #141922;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     height: 45px;
 }
@@ -235,16 +289,6 @@ nav
   position: relative;
 }
 
-.navbar-list li:before
-{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #424245;
-}
 
 .navbar-list a
 {
@@ -259,7 +303,7 @@ nav
 
 .navbar-list a:hover
 {
-    color: #007bff!important;
+    color: #ee394b!important;
 }
 
 @media only screen and (min-width: 767px)
