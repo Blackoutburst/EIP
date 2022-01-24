@@ -10,7 +10,7 @@ switch import App from './App.svelte' in src/main.js to import App from '../Priv
 npm install
 npm run dev
 ```
-# Thanks to don't push **src/main.js** except if you want to modify the final website
+# Don't push **src/main.js** except if you want to modify the final website
 
 I swear to god do not push **node_modules**
 
